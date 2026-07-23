@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# ssh key gen with passwotrd betty and stored in ssh/school
-ssh-keygen -t rsa -b 4096 -N betty -f school
+# ssh key gen with password betty and stored in ssh/school
+ssh-keygen -t rsa -b 4096 -f school -N "betty"
