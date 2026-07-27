@@ -8,4 +8,5 @@ FILE_PATH="$1"
 IP="$2"
 USERNAME="$3"
 SSH_KEY="$4"
+chmod 400 "$SSH_KEY"
 scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE_PATH" "$USERNAME@$IP":~/
